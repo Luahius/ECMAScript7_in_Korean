@@ -136,3 +136,17 @@ ECMAScript는 ECMAScript 엔티티의 정의를 완성한 built-in 오브젝터 
 ECMAScript syntax는 의도적으로 Java syntax와 비슷합니다. ECMAScript syntax는 사용하기 편한 스크립트 언어를 제공할 수 있도록 완화되었습니다. 예를 들어, 변수는 type 선언이나 type에 프로퍼티를 연동할 필요가 없고 또한 정의된 function도 원래대로 호출하는 선언문을 가질 필요도 없습니다.
 
 
+
+5. 표기법 규약
+
+5.1 통어와 사전적 문법
+
+5.1.1 문맥 의존 문법 -> https://en.wikipedia.org/wiki/Context-free_grammar
+    문맥 의존 문법은 많은 작품들로 구성되어 있습니다. 각각의 작품들은 nonterminal이라는 추상적 기호로 불려지고, 왼편으로 정렬됩니다.
+    그리고 0이나 그 이상의 nonterminal,terminal 기호를 오른쪽으로 배치합니다. 각각 문법의 경우 terminal 기호는 지정된 알파벳으로 그려집니다.
+    
+    체인생산은 오른쪽으로 정렬된 0또는 그 이상의 terminal 기호 및 하나의 nonterminal 기호를 가집니다. 
+
+    하나의 독특한 문장으로 이루어진 nonterminal로 시작해, 목표 기호로 불립니다, 이미 정해진 문맥 의존 문법은 하나의 언어로 명시됩니다.
+    즉,{perhaps infinite}는 제품(nonterminal,terminal,0)이 왼쪽사이드에 정렬되어져 있을때, 터미널 기호들이 반복적으로 왼쪽에서 
+    오른쪽으로 교체될수 있는 상황을 말합니다. 
