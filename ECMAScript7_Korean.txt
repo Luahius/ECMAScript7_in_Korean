@@ -166,3 +166,12 @@ CF의 constructor는 CFp, cf1, cf2, cf3, cf4 또는 c5에서 볼 수 없는 두�
     하나의 독특한 문장으로 이루어진 nonterminal로 시작해, 목표 기호로 불립니다, 이미 정해진 문맥 의존 문법은 하나의 언어로 명시됩니다.
     즉,{perhaps infinite}는 제품(nonterminal,terminal,0)이 왼쪽사이드에 정렬되어져 있을때, 터미널 기호들이 반복적으로 왼쪽에서 
     오른쪽으로 교체될수 있는 상황을 말합니다. 
+
+5.1.2 렉시컬 그리고 정규표현식 문법
+    ECMAScript를 위한 렉시컬 문법은 이 지침서의 11조에 있습니다.
+    이 문법은 아래 10.1에 정의된 규칙을 준수하는 터미널 기호의 유니코드 코드를 가지고 있습니다.
+    그것은 일련의 제품과,goal Symbol의 InputElementDiv,InputElementTemplateTail,또는 InputElementRegExp,InputElementRegExpOrTemplateTail등 이러한 코드의 시퀀스가 일련의 입력 요소로 변환되는 방법을 설명합니다.
+    
+    공백 및 주석 이외의 입력요소들은 ECMAScript의 구문문법에 대한 터미널 기호를 생성하며, 그것들을 ECMAScript 토큰이라고 합니다.
+    이토큰들은 예약어,식별자,ECMAScript의 구두점(. ; : ,)입니다.(punctuators of the ECMAScript language).
+    
