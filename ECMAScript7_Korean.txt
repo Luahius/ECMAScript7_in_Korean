@@ -1,4 +1,4 @@
-﻿ECMA International
+ECMA International
 Standard ECMA-262
 언어 명세
 
@@ -599,8 +599,28 @@ IEEE 754-2008 "Not-a-Number" 값인 숫자 값
       SourceCharacter :: 
 			 any Unicode code point
       
-                       
-  
-      
-        
- 
+
+
+6. ECMAScript 자료 타입과 값
+
+이 명세에서의 알고리즘은 관련된 타입을 가진 각각의 값들을 다룹니다. 이번 항에 정의된 것은 양의 값 타입입니다. 타입들은 더 나아가 ECMAScript 언어 타입과 명세 타입으로 세분화됩니다.
+
+이 명세에서 표시법 “Type(x)”는 “the type of x”를 줄여쓴 것인데 거기서 “type”은 ECMAScript 언어와 이 항에 정의된 명세타입을 가리킵니다. “empty”란 용어가 그 값을 이름지어지는 것처럼 사용될 때, “no value of any type”을 말하는 것과 동등합니다.
+
+6.1 ECMAScript 언어 타입
+
+EMCAScript 언어 타입은 직접적으로 ECMAScript 언어를 사용하는 ECMAScript 개발자에 의해 다뤄진 값들과 일치합니다. ECMAScript 언어 타입은 Undefined, Null, Boolean, String, Symbol, Number와 Object입니다. ECMAScript 언어 값은 ECMAScript 언어 타입에 의해 규정된 값입니다.
+
+6.1.1 Undefined 타입
+Undefined 타입은 정확히 말해 undefined이라는 값을 가지고 있습니다. 값을 할당하지 않은 어떠한 변수는 undefined라는 값을 가지고 있습니다. 
+
+6.1.2 Null 타입
+Null 타입은 정확히 말해 null이라는 값을 가지고 있습니다.
+
+6.1.3 The Boolean 타입
+Boolean 타입은 true와 false라는 두 가지 논리적인 엔티티를 나타냅니다.
+
+6.1.4 String 타입
+String타입은 0이거나 그 이상의 최대 길이가 2의 53승 -1인 16비트 부호가 없는 정수 값(“elements”)의 모두 순서가 있는 시퀀스의 집합체입니다. String 타입은 일반적으로 동작하고 있는 ECMAScript 프로그램에 UTF-16 코드 단위 값으로써 처리된 String의 각 항목의 글자형태의 데이터를 나타내도록 사용됩니다. 각 요소는 시퀀스 내에 차지하는 위치로써 간주됩니다. 이 위치들은 음수가 아닌 정수로 번호 매겨집니다. index 0 에 첫번째 요소(있다면)가 , index 1 에 그 다음 요소(있다면)가 , 계속 진행됩니다. String의 길이는 요소들의 번호입니다(i.e., 16비트 값). 비어있는 String은 0의 길이를 가지고 그러므로 요소를 포함하지 않습니다.
+
+ECMAScript 기능들은 String 값을 해석 (where?), 각 요소는 단일 UTF-16 코드 유닛으로 해석됩니다. 그러나, ECMAScript는 String 값에 코드 유닛의 시퀀스에 대한 어떤 제한이나 요구를 두지 않습니다. 
